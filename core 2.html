@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<hr>
+<nav>
+<table cellspacing="6">
+<tr>
+<td><a href="index.html">Home</a></td>
+<td><a href="Panatang makabayan.html">Panatang Makabayan</a></td>
+<td><a href="core 2.html">Core Values</a></td>
+<td><a href="panunumpa.html">Panunumpa Sa Watawat</a></td>
+</tr> 
+</table>
+</nav> 
+</hr>
+
+    <title>CORE VALUES</title>
+    <style>
+        body {
+            background-color: powderblue;
+            font-family: Times New Roman, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: powderblue;
+            font-size: 50px;
+            padding: 20px;
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 30px;
+            color: black;
+            margin: 10px 0;
+        }
+
+        /Animation container /
+        .flag-container {
+            position: relative;
+            margin-top: 40px;
+            height: 300px;
+        }
+
+        /* Moving flag */
+        .flag img {
+            width: 400px;
+            height: auto;
+            position: absolute;
+            animation: moveFlag 8s linear infinite;
+        }
+
+        /* Alternate images (slideshow effect) */
+        .slideshow img {
+            width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px gray;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            animation: fade 6s infinite;
+        }
+        .slideshow img:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .slideshow img:nth-child(2) {
+            animation-delay: 3s;
+        }
+
+        /* Keyframes */
+        @keyframes moveFlag {
+            0% { left: -450px; }
+            50% { left: 50%; transform: translateX(-50%); }
+            100% { left: 100%; }
+        }
+
+        @keyframes fade {
+            0%, 50%, 100% { opacity: 0; }
+            25% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CORE VALUES</h1>
+    <h3>MAKA-DIYOS</h3>
+    <h3>MAKA-TAO</h3>
+    <h3>MAKABAYAN</h3>
+    <h3>AT MAKA-BANSA</h3>
+
+    <div class="flag-container">
+        <!-- Moving Flag -->
+        <div class="flag">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Flag_of_the_Philippines.svg" alt="Philippine Flag">
+
+        <!-- Slideshow Images -->
+        <div class="slideshow">
+            </div>
+
+</body>
+</html>
